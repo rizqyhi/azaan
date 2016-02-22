@@ -1,0 +1,42 @@
+{
+  "name": "moment-hijri",
+  "main": "moment-hijri.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/xsoh/moment-hijri",
+  "authors": [
+    "Suhail Alkowaileet <xsoh.k7@gmail.com>"
+  ],
+  "description": "A Hijri calendar (Based on Umm al-Qura calculations) plugin for moment.js.",
+  "keywords": [
+    "hijri",
+    "hijriah",
+    "arabic",
+    "lunar",
+    "Umm al-Qura",
+    "date",
+    "calendar",
+    "conversion",
+    "convert"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "momentjs": "~2.10.3"
+  },
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "b82ed6d03af602eca6131da61dcab6c61e6171ca"
+  },
+  "_source": "git://github.com/xsoh/moment-hijri.git",
+  "_target": "~2.0.0",
+  "_originalSource": "moment-hijri",
+  "_direct": true
+}

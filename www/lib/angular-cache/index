@@ -1,0 +1,2171 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>jmdobry/angular-cache · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="jmdobry/angular-cache" name="twitter:title" /><meta content="angular-cache is a very useful replacement for Angular&#39;s $cacheFactory." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/1213510?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/1213510?v=3&amp;s=400" property="og:image" /><meta content="jmdobry/angular-cache" property="og:title" /><meta content="https://github.com/jmdobry/angular-cache" property="og:url" /><meta content="angular-cache is a very useful replacement for Angular&#39;s $cacheFactory." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="B4F5CC1A:26AE:12012567:56589C86" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+<meta content="Rails, view, files#disambiguate" data-pjax-transient="true" name="analytics-event" />
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+    <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+
+
+
+
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="0308dcdc0508eb988df7bc4291c6dc1b3a51c66c" name="form-nonce" />
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3698fb0adc53fda9a2672a02c3fa3b20b89480f2a47ce38216b21cf3eb5b4750.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-912fc0b3ba75b656d2d1687e8be122647344ab57d955de8f6635ee88161cf450.css" media="all" rel="stylesheet" />
+    
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="dd39fae7621416ea1170f4f42e76f703">
+
+      
+  <meta name="description" content="angular-cache is a very useful replacement for Angular&#39;s $cacheFactory.">
+  <meta name="go-import" content="github.com/jmdobry/angular-cache git https://github.com/jmdobry/angular-cache.git">
+
+  <meta content="1213510" name="octolytics-dimension-user_id" /><meta content="jmdobry" name="octolytics-dimension-user_login" /><meta content="10152133" name="octolytics-dimension-repository_id" /><meta content="jmdobry/angular-cache" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="10152133" name="octolytics-dimension-repository_network_root_id" /><meta content="jmdobry/angular-cache" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/jmdobry/angular-cache/commits/master.atom" rel="alternate" title="Recent Commits to angular-cache:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out   env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fjmdobry%2Fangular-cache" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/jmdobry/angular-cache/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/jmdobry/angular-cache/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+
+      <div class="container">
+
+        <div class="clearfix">
+          
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fjmdobry%2Fangular-cache"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/jmdobry/angular-cache/watchers">
+    46
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fjmdobry%2Fangular-cache"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/jmdobry/angular-cache/stargazers">
+      939
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fjmdobry%2Fangular-cache"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+
+    <a href="/jmdobry/angular-cache/network" class="social-count">
+      109
+    </a>
+  </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/jmdobry" class="url fn" itemprop="url" rel="author"><span itemprop="title">jmdobry</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/jmdobry/angular-cache" data-pjax="#js-repo-pjax-container">angular-cache</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline with-full-navigation">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/jmdobry/angular-cache/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/jmdobry/angular-cache" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /jmdobry/angular-cache">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/jmdobry/angular-cache/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /jmdobry/angular-cache/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/jmdobry/angular-cache/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /jmdobry/angular-cache/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/jmdobry/angular-cache/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /jmdobry/angular-cache/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/jmdobry/angular-cache/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /jmdobry/angular-cache/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3 class="text-small text-muted"><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/jmdobry/angular-cache.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3 class="text-small text-muted"><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/jmdobry/angular-cache" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<div class="clone-options text-small text-muted">You can clone with
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="0308dcdc0508eb988df7bc4291c6dc1b3a51c66c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="G3GJIKN9vnb+DQOHhfB7Md6b3MIg2kg9hsA7snZv+8dEw7sdxUC4/kZYg3QaGA/x0oXod67p/QV6tcTJnsYAAQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="0308dcdc0508eb988df7bc4291c6dc1b3a51c66c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="1PlS7sCa50Ejdvo7MG5KIzIp2u1SSkNsn1FNsu9eqYYiMMAO3kQoejWk4PUNbfJj5dgRMWCI+wZ9U0MIbCcjdA==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</div>
+
+              <a href="/jmdobry/angular-cache/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of jmdobry/angular-cache as a zip file"
+                 title="Download the contents of jmdobry/angular-cache as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<span id="js-show-full-navigation"></span>
+
+  <div class="repository-meta js-details-container ">
+    <div class="repository-description">
+      angular-cache is a very useful replacement for Angular's $cacheFactory.
+    </div>
+
+    <div class="repository-website">
+      <a href="http://jmdobry.github.io/angular-cache" rel="nofollow">http://jmdobry.github.io/angular-cache</a>
+    </div>
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/jmdobry/angular-cache/commits/master">
+            <span class="octicon octicon-history"></span>
+            <span class="num text-emphasized">
+              243
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/jmdobry/angular-cache/branches">
+          <span class="octicon octicon-git-branch"></span>
+          <span class="num text-emphasized">
+            3
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/jmdobry/angular-cache/releases">
+          <span class="octicon octicon-tag"></span>
+          <span class="num text-emphasized">
+            63
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/jmdobry/angular-cache/graphs/contributors">
+    <span class="octicon octicon-organization"></span>
+    <span class="num text-emphasized">
+      7
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/jmdobry/angular-cache/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">98.6%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/jmdobry/angular-cache/search?l=html">
+                <span class="color-block language-color" style="background-color:#e44b23;"></span>
+                <span class="lang">HTML</span>
+                <span class="percent">1.4%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details">
+    <span class="language-color" aria-label="JavaScript 98.6%" style="width:98.6%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+    <span class="language-color" aria-label="HTML 1.4%" style="width:1.4%; background-color:#e44b23;" itemprop="keywords">HTML</span>
+  </div>
+
+<include-fragment src="/jmdobry/angular-cache/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+
+  <div class="file-navigation in-mid-page">
+  <a href="/jmdobry/angular-cache/find/master"
+        class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s right"
+        data-pjax
+        data-hotkey="t"
+        aria-label="Quickly jump between files"
+        data-ga-click="Repository, find file, location:repo overview">
+    <span class="octicon octicon-list-unordered"></span>
+  </a>
+
+    <a href="/jmdobry/angular-cache/compare" aria-label="Compare, review, create a pull request" class="btn btn-sm btn-primary tooltipped tooltipped-se left compare-button" aria-label="Compare &amp; review" data-pjax data-ga-click="Repository, go to compare view, location:repo overview; icon:git-compare">
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jmdobry/angular-cache/tree/gh-pages"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/jmdobry/angular-cache/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/jmdobry/angular-cache/tree/v2"
+               data-name="v2"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="v2">
+                v2
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.6.0"
+                 data-name="ngAdvancedCache-0.6.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.6.0">ngAdvancedCache-0.6.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.5.0"
+                 data-name="ngAdvancedCache-0.5.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.5.0">ngAdvancedCache-0.5.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.4.1"
+                 data-name="ngAdvancedCache-0.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.4.1">ngAdvancedCache-0.4.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.4.0"
+                 data-name="ngAdvancedCache-0.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.4.0">ngAdvancedCache-0.4.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.3.1"
+                 data-name="ngAdvancedCache-0.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.3.1">ngAdvancedCache-0.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.3.0"
+                 data-name="ngAdvancedCache-0.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.3.0">ngAdvancedCache-0.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.2.0"
+                 data-name="ngAdvancedCache-0.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.2.0">ngAdvancedCache-0.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/ngAdvancedCache-0.1.0"
+                 data-name="ngAdvancedCache-0.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="ngAdvancedCache-0.1.0">ngAdvancedCache-0.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/angular-cache-0.8.0"
+                 data-name="angular-cache-0.8.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="angular-cache-0.8.0">angular-cache-0.8.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/angular-cache-0.6.1"
+                 data-name="angular-cache-0.6.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="angular-cache-0.6.1">angular-cache-0.6.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.4.2"
+                 data-name="4.4.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.4.2">4.4.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.4.1"
+                 data-name="4.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.4.1">4.4.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.4.0"
+                 data-name="4.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.4.0">4.4.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.3.2"
+                 data-name="4.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.3.2">4.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.3.1"
+                 data-name="4.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.3.1">4.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.3.0"
+                 data-name="4.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.3.0">4.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.2.2"
+                 data-name="4.2.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.2.2">4.2.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.2.1"
+                 data-name="4.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.2.1">4.2.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.2.0"
+                 data-name="4.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.2.0">4.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.1.0"
+                 data-name="4.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.1.0">4.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.0.2"
+                 data-name="4.0.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.0.2">4.0.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.0.1"
+                 data-name="4.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.0.1">4.0.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/4.0.0"
+                 data-name="4.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="4.0.0">4.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.2.5"
+                 data-name="3.2.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.5">3.2.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.2.4"
+                 data-name="3.2.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.4">3.2.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.2.3"
+                 data-name="3.2.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.3">3.2.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.2.2"
+                 data-name="3.2.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.2">3.2.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.2.1"
+                 data-name="3.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.1">3.2.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.2.0"
+                 data-name="3.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.2.0">3.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.1.1"
+                 data-name="3.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.1">3.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.1.0"
+                 data-name="3.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.1.0">3.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.3"
+                 data-name="3.0.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.3">3.0.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.2"
+                 data-name="3.0.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.2">3.0.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.1"
+                 data-name="3.0.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.1">3.0.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.0"
+                 data-name="3.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.0">3.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.0-beta.4"
+                 data-name="3.0.0-beta.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.0-beta.4">3.0.0-beta.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.0-beta.3"
+                 data-name="3.0.0-beta.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.0-beta.3">3.0.0-beta.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.0-beta.2"
+                 data-name="3.0.0-beta.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.0-beta.2">3.0.0-beta.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/3.0.0-beta.1"
+                 data-name="3.0.0-beta.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="3.0.0-beta.1">3.0.0-beta.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.4.1"
+                 data-name="2.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.4.1">2.4.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.4.0"
+                 data-name="2.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.4.0">2.4.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.7"
+                 data-name="2.3.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.7">2.3.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.6"
+                 data-name="2.3.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.6">2.3.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.5"
+                 data-name="2.3.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.5">2.3.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.4"
+                 data-name="2.3.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.4">2.3.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.3"
+                 data-name="2.3.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.3">2.3.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.2"
+                 data-name="2.3.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.2">2.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.1"
+                 data-name="2.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.1">2.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.3.0"
+                 data-name="2.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.3.0">2.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.2.0"
+                 data-name="2.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.2.0">2.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.1.1"
+                 data-name="2.1.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.1.1">2.1.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.1.0"
+                 data-name="2.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.1.0">2.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.0.0"
+                 data-name="2.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.0.0">2.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/2.0.0-rc.1"
+                 data-name="2.0.0-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="2.0.0-rc.1">2.0.0-rc.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/1.2.1"
+                 data-name="1.2.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.2.1">1.2.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/1.2.0"
+                 data-name="1.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.2.0">1.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/1.1.0"
+                 data-name="1.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.1.0">1.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/1.0.0"
+                 data-name="1.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.0.0">1.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/1.0.0-rc.1"
+                 data-name="1.0.0-rc.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="1.0.0-rc.1">1.0.0-rc.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/0.9.1"
+                 data-name="0.9.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.1">0.9.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/0.9.0"
+                 data-name="0.9.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.9.0">0.9.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/0.8.2"
+                 data-name="0.8.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.8.2">0.8.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/jmdobry/angular-cache/tree/0.8.1"
+                 data-name="0.8.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="0.8.1">0.8.1</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="breadcrumb"><span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jmdobry/angular-cache" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">angular-cache</span></a></span></span><span class="separator">/</span>
+  <span class="tooltipped tooltipped-e disabled text-muted" aria-label="You must be signed in to make or propose changes">
+    <span class="octicon octicon-plus"></span>
+  </span>
+</div>
+</div>
+
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="/jmdobry/angular-cache/commit/852ae488839bb4624ac1287ef6674c3478c30bc8" data-pjax>
+        852ae48
+      </a>
+      <time datetime="2015-10-13T03:48:14Z" is="relative-time">Oct 13, 2015</time>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@jmdobry" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/1213510?v=3&amp;s=40" width="20" />
+      <a href="/jmdobry" class="user-mention" rel="author">jmdobry</a>
+    </span>
+
+        <a href="/jmdobry/angular-cache/commit/852ae488839bb4624ac1287ef6674c3478c30bc8" class="message" data-pjax="true" title="Fixed version">Fixed version</a>
+    </span>
+
+  </div>
+
+
+<div class="file-wrap">
+  <a href="/jmdobry/angular-cache/tree/852ae488839bb4624ac1287ef6674c3478c30bc8" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/tree/master/build_examples" class="js-directory-link js-navigation-open" id="9b57dab3c1d7f51447ef8ee7b835439a-9bc278ba40fdd34bb4dba433607c238a46e46fe2" title="build_examples">build_examples</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/a286c76a3eae21f00bc7b177a75f4ca320fa8d38" class="message" data-pjax="true" title="Stable Version 4.2.1.
+
+Updated dependencies
+Better commonjs interop
+Added a number of build examples
+
+Fixes #166
+Fixes #183
+Fixes #185">Stable Version 4.2.1.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-01T14:49:04Z" is="time-ago">Jul 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/tree/master/dist" class="js-directory-link js-navigation-open" id="2a6d07eef8b10b84129b42424ed99327-fff80aeaa82bc8fe983742c28f47eb6101a0d5b8" title="dist">dist</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/852ae488839bb4624ac1287ef6674c3478c30bc8" class="message" data-pjax="true" title="Fixed version">Fixed version</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-13T03:48:14Z" is="time-ago">Oct 13, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/tree/master/src" class="js-directory-link js-navigation-open" id="25d902c24283ab8cfbac54dfa101ad31-f18e97cf204cab14c64a774f3ce98eb9fdd6fcd2" title="src">src</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/84616a92da9ac2cf2d19977b5fc5d46b9c1ebed3" class="message" data-pjax="true" title="Fixes #200.
+Fixes #201.
+
+Stable Version 4.4.0">Fixes</a> <a href="https://github.com/jmdobry/angular-cache/issues/200" class="issue-link" title="4.3 storagePrefix is not backwards compatible">#200</a><a href="/jmdobry/angular-cache/commit/84616a92da9ac2cf2d19977b5fc5d46b9c1ebed3" class="message" data-pjax="true" title="Fixes #200.
+Fixes #201.
+
+Stable Version 4.4.0">.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-12T21:31:22Z" is="time-ago">Oct 12, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/tree/master/test/unit" class="js-directory-link js-navigation-open" id="877fbbe2538d21acbd5acd35d57e8d66-97fffd6f96b0c7cb0d8836b84566dfaa50351bd7" title="This path skips through empty directories"><span class="simplified-path">test/</span>unit</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/43b547d188fc1c4e1d2a2ba5c9a5422a0b807d3e" class="message" data-pjax="true" title="Stable Version 4.3.0.
+
+Closes #189">Stable Version 4.3.0.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-07T04:27:32Z" is="time-ago">Jul 6, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/.gitignore" class="js-directory-link js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-83b561d99cdbc5336f417ebce12b21f24ddb364c" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/a286c76a3eae21f00bc7b177a75f4ca320fa8d38" class="message" data-pjax="true" title="Stable Version 4.2.1.
+
+Updated dependencies
+Better commonjs interop
+Added a number of build examples
+
+Fixes #166
+Fixes #183
+Fixes #185">Stable Version 4.2.1.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-01T14:49:04Z" is="time-ago">Jul 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/.jshintrc" class="js-directory-link js-navigation-open" id="4d5aa81bf4f18104bb6ea53a8b5d1f43-51593b9863b017f300552f89bd18960b1516c498" title=".jshintrc">.jshintrc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/f79a794fc357f5f19a3f64d7582017159aa7cede" class="message" data-pjax="true" title="4.0.0 rewrite">4.0.0 rewrite</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-03-16T04:26:24Z" is="time-ago">Mar 15, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/.npmignore" class="js-directory-link js-navigation-open" id="0fd4ef892d9d4990033701887c2f9bcc-fac0c6d12450676a48d838f8b3f6baecb2040bcb" title=".npmignore">.npmignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/54f4f95f9202a011f1b5a5852a5390afbecab298" class="message" data-pjax="true" title="Closes #98.">Closes</a> <a href="https://github.com/jmdobry/angular-cache/issues/98" class="issue-link" title="Make cache prefix in localStorage customizable">#98</a><a href="/jmdobry/angular-cache/commit/54f4f95f9202a011f1b5a5852a5390afbecab298" class="message" data-pjax="true" title="Closes #98.">.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-02-24T07:47:33Z" is="time-ago">Feb 24, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/.travis.yml" class="js-directory-link js-navigation-open" id="354f30a63fb0907d4ad57269548329e3-8deda9362acf83953592a69d021bd5e67623195d" title=".travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/85601b15267147cdf668b74b88e487828a46e31a" class="message" data-pjax="true" title="Added polyfill for $$minErr.
+
+Stable Version 3.0.1.">Added polyfill for $$minErr.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-06-14T17:32:10Z" is="time-ago">Jun 14, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/CHANGELOG.md" class="js-directory-link js-navigation-open" id="4ac32a78649ca5bdd8e0ba38b7006a1e-15e8d0a4d26d8aac7224293e843be7724ea02a21" title="CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/8e852310480bddfb796848b89bdc6c4ade5d1f1b" class="message" data-pjax="true" title="Fixes #203.
+
+Stable Version 4.4.1">Fixes</a> <a href="https://github.com/jmdobry/angular-cache/issues/203" class="issue-link" title="trouble: bundle with r.js not works">#203</a><a href="/jmdobry/angular-cache/commit/8e852310480bddfb796848b89bdc6c4ade5d1f1b" class="message" data-pjax="true" title="Fixes #203.
+
+Stable Version 4.4.1">.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-13T03:42:14Z" is="time-ago">Oct 13, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/CONTRIBUTING.md" class="js-directory-link js-navigation-open" id="6a3371457528722a734f3c51d9238c13-47bae77321cbf79d6961cb4bbffa3862acb523dc" title="CONTRIBUTING.md">CONTRIBUTING.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/e39a519f3f54008ed157306cfa60d0e8533d50e1" class="message" data-pjax="true" title="Fixes">Fixes</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-02T18:32:46Z" is="time-ago">Feb 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/Gruntfile.js" class="js-directory-link js-navigation-open" id="35b4a816e0441e6a375cd925af50752c-b06357cb9cc4ca9a5d9d07b118cc35d911157521" title="Gruntfile.js">Gruntfile.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/8e852310480bddfb796848b89bdc6c4ade5d1f1b" class="message" data-pjax="true" title="Fixes #203.
+
+Stable Version 4.4.1">Fixes</a> <a href="https://github.com/jmdobry/angular-cache/issues/203" class="issue-link" title="trouble: bundle with r.js not works">#203</a><a href="/jmdobry/angular-cache/commit/8e852310480bddfb796848b89bdc6c4ade5d1f1b" class="message" data-pjax="true" title="Fixes #203.
+
+Stable Version 4.4.1">.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-13T03:42:14Z" is="time-ago">Oct 13, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/LICENSE" class="js-directory-link js-navigation-open" id="9879d6db96fd29134fc802214163b95a-fca34706ad5ee820ae313752d6f90df69c6806d6" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/ed7a6065f8789ba1ee0e6b5b1065b8ba999d59eb" class="message" data-pjax="true" title="Stable Version 3.2.5.
+
+Fixes #152. Fixes #153.">Stable Version 3.2.5.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-02-02T18:51:11Z" is="time-ago">Feb 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/README.md" class="js-directory-link js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-69f479f7bde8dd05394c97e8b401700ca187e5d5" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/70a5884532a9f0e02b130da209096cbc80aed27b" class="message" data-pjax="true" title="Update README">Update README</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-02T19:57:42Z" is="time-ago">Aug 2, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/TRANSITION.md" class="js-directory-link js-navigation-open" id="d92bf87e633ba2b267b26c8a843341e2-0c0920dca8d514d358d8d3f1442b8380a590cf58" title="TRANSITION.md">TRANSITION.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/dbeb64d095f9c4ba86a0cf9190d48b42729f8cde" class="message" data-pjax="true" title="Missing starting backtick">Missing starting backtick</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-11-05T13:49:57Z" is="time-ago">Nov 5, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/bower.json" class="js-directory-link js-navigation-open" id="0a08a7565aba4405282251491979bb6b-18882a7b0adf69f3a50d654689ba3a08d7ab856d" title="bower.json">bower.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/8d145d273b08f37cf8f1173931cd633ce27a3bb9" class="message" data-pjax="true" title="Stable Version 4.1.0.
+
+Closes #169">Stable Version 4.1.0.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-03-30T16:13:29Z" is="time-ago">Mar 30, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/circle.yml" class="js-directory-link js-navigation-open" id="29944324a3cbf9f4bd0162dfe3975d88-74b094654b1ca6eeb89bb28e3e40bd443f160957" title="circle.yml">circle.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/5ab3bc88c54f0983d7d785bc3fd9ff370ef171d9" class="message" data-pjax="true" title="Fixes #147.
+
+Stable Version 3.2.2.">Fixes</a> <a href="https://github.com/jmdobry/angular-cache/issues/147" class="issue-link" title="storeOnReject and may be storeOnResolve does not inherits it's value from setCacheDefaults ">#147</a><a href="/jmdobry/angular-cache/commit/5ab3bc88c54f0983d7d785bc3fd9ff370ef171d9" class="message" data-pjax="true" title="Fixes #147.
+
+Stable Version 3.2.2.">.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-11-24T15:55:56Z" is="time-ago">Nov 24, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/karma.conf.js" class="js-directory-link js-navigation-open" id="a2a3b7b0c9c3b4b93b4aebf4e3ec3cfb-e35875da4790fdde02163ee49e3f1919ad3145cc" title="karma.conf.js">karma.conf.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/ac585848f1bee9f15feda1a337caba611fa816d8" class="message" data-pjax="true" title="Stable Version 4.3.1.
+
+Fixes #190">Stable Version 4.3.1.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-07T14:15:17Z" is="time-ago">Jul 7, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/karma.start.js" class="js-directory-link js-navigation-open" id="9fb3ef372fe363d45a41982b888eeac1-5c319ae9233c18172e84aa989ab73aaecfc83cad" title="karma.start.js">karma.start.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/43b547d188fc1c4e1d2a2ba5c9a5422a0b807d3e" class="message" data-pjax="true" title="Stable Version 4.3.0.
+
+Closes #189">Stable Version 4.3.0.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-07T04:27:32Z" is="time-ago">Jul 7, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text"></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/jmdobry/angular-cache/blob/master/package.json" class="js-directory-link js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-368c9fd60524db262214cb6b0bc1f528bc6dc1e8" title="package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/jmdobry/angular-cache/commit/852ae488839bb4624ac1287ef6674c3478c30bc8" class="message" data-pjax="true" title="Fixed version">Fixed version</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-10-13T03:48:14Z" is="time-ago">Oct 13, 2015</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <div id="readme" class="boxed-group flush clearfix announce instapaper_body md">
+    <h3>
+      <span class="octicon octicon-book"></span>
+      README.md
+    </h3>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h2><a id="user-content-angular-cache-----" class="anchor" href="#angular-cache-----" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-cache <a href="https://www.npmjs.org/package/angular-cache"><img src="https://camo.githubusercontent.com/b0865249ddb21be6140348387b923711f318cb5d/68747470733a2f2f696d672e736869656c64732e696f2f626f7765722f762f616e67756c61722d63616368652e7376673f7374796c653d666c61742d737175617265" alt="bower version" data-canonical-src="https://img.shields.io/bower/v/angular-cache.svg?style=flat-square" style="max-width:100%;"></a> <a href="https://www.npmjs.org/package/angular-cache"><img src="https://camo.githubusercontent.com/5c2bd395a2d29821287f74b46e848d92d67842a7/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f616e67756c61722d63616368652e7376673f7374796c653d666c61742d737175617265" alt="npm version" data-canonical-src="https://img.shields.io/npm/v/angular-cache.svg?style=flat-square" style="max-width:100%;"></a> <a href="https://circleci.com/gh/jmdobry/angular-cache/tree/master"><img src="https://camo.githubusercontent.com/3c0eb24ad0d6c70dd747c48d92c474a9d90feb0e/68747470733a2f2f696d672e736869656c64732e696f2f636972636c6563692f70726f6a6563742f6a6d646f6272792f616e67756c61722d63616368652f6d61737465722e7376673f7374796c653d666c61742d737175617265" alt="Circle CI" data-canonical-src="https://img.shields.io/circleci/project/jmdobry/angular-cache/master.svg?style=flat-square" style="max-width:100%;"></a> <a href="https://www.npmjs.org/package/angular-cache"><img src="https://camo.githubusercontent.com/f51e9bf699f5ad553976fa01483b671e357d97fc/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f616e67756c61722d63616368652e7376673f7374796c653d666c61742d737175617265" alt="npm downloads" data-canonical-src="https://img.shields.io/npm/dm/angular-cache.svg?style=flat-square" style="max-width:100%;"></a> <a href="https://github.com/jmdobry/angular-cache/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/4b5966a2a252ee0f241a1e03b13417178eb4964f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e7376673f7374796c653d666c61742d737175617265" alt="License" data-canonical-src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" style="max-width:100%;"></a></h2>
+
+<p>A very useful replacement for Angular's $cacheFactory.</p>
+
+<p><strong>versions of angular-cache below 4.0.0 have been deprecated, see the <a href="https://github.com/jmdobry/angular-cache/blob/master/CHANGELOG.md">breaking changes</a> in 4.0.0</strong></p>
+
+<p><strong>Latest Release:</strong> <a href="https://github.com/jmdobry/angular-cache/releases"><img src="https://camo.githubusercontent.com/7ae10ed38ea7913a8ae82cba918a58ad51285c28/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f6a6d646f6272792f616e67756c61722d63616368652e7376673f7374796c653d666c61742d737175617265" alt="Latest Release" data-canonical-src="https://img.shields.io/github/release/jmdobry/angular-cache.svg?style=flat-square" style="max-width:100%;"></a></p>
+
+<p><strong>Status:</strong></p>
+
+<p><a href="https://gemnasium.com/jmdobry/angular-cache"><img src="https://camo.githubusercontent.com/36eb04e1223448985901abe83af2c855da0f14e0/68747470733a2f2f696d672e736869656c64732e696f2f67656d6e617369756d2f6a6d646f6272792f616e67756c61722d63616368652e7376673f7374796c653d666c61742d737175617265" alt="Dependency Status" data-canonical-src="https://img.shields.io/gemnasium/jmdobry/angular-cache.svg?style=flat-square" style="max-width:100%;"></a> <a href="https://coveralls.io/r/jmdobry/angular-cache?branch=master"><img src="https://camo.githubusercontent.com/0fd75c5f64d775e21dca525cac59a207a2f0d644/68747470733a2f2f696d672e736869656c64732e696f2f636f766572616c6c732f6a6d646f6272792f616e67756c61722d63616368652f6d61737465722e7376673f7374796c653d666c61742d737175617265" alt="Coverage Status" data-canonical-src="https://img.shields.io/coveralls/jmdobry/angular-cache/master.svg?style=flat-square" style="max-width:100%;"></a> <a href="https://www.codacy.com/public/jasondobry/angular-cache/dashboard"><img src="https://camo.githubusercontent.com/467cdc738666567329aecea0e2729b29c27945e3/68747470733a2f2f696d672e736869656c64732e696f2f636f646163792f35653237653231643063346334643463623230336435383933383461613933612e7376673f7374796c653d666c61742d737175617265" alt="Codacity" data-canonical-src="https://img.shields.io/codacy/5e27e21d0c4c4d4cb203d589384aa93a.svg?style=flat-square" style="max-width:100%;"></a></p>
+
+<p><strong>Supported Browsers:</strong></p>
+
+<p><a href="https://github.com/jmdobry/angular-cache"><img src="https://camo.githubusercontent.com/7bc37da93e2dd3924a83c512c271b704902a2fd8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f42726f777365722d4368726f6d6525324346697265666f782532435361666172692532434f70657261253243494525323039253242253243694f53253230536166617269253230372e31253242253243416e64726f696425323042726f77736572253230322e332532422d677265656e2e7376673f7374796c653d666c61742d737175617265" alt="browsers" data-canonical-src="https://img.shields.io/badge/Browser-Chrome%2CFirefox%2CSafari%2COpera%2CIE%209%2B%2CiOS%20Safari%207.1%2B%2CAndroid%20Browser%202.3%2B-green.svg?style=flat-square" style="max-width:100%;"></a></p>
+
+<h3><a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h3>
+
+<ul>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#the-basics">The Basics</a></li>
+<li><a href="#working-with-a-cache">Working with a cache</a></li>
+<li><a href="#configuration-options">Configuration Options</a></li>
+<li><a href="#using-angular-cache-with-http">Using angular-cache with $http</a></li>
+<li><a href="#using-angular-cache-with-localstorage">Using angular-cache with localStorage</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+</ul>
+
+<h3><a id="user-content-quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Start</h3>
+
+<p><code>bower install --save angular-cache</code> or <code>npm install --save angular-cache</code>.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>myApp<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>angular-cache<span class="pl-pds">'</span></span>])
+  .<span class="pl-en">config</span>(<span class="pl-k">function</span> (<span class="pl-smi">CacheFactoryProvider</span>) {
+    <span class="pl-smi">angular</span>.<span class="pl-en">extend</span>(<span class="pl-smi">CacheFactoryProvider</span>.<span class="pl-smi">defaults</span>, { maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span> });
+  })
+  .<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>BookService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">CacheFactory</span>) {
+    <span class="pl-k">if</span> (<span class="pl-k">!</span><span class="pl-smi">CacheFactory</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>bookCache<span class="pl-pds">'</span></span>)) {
+      <span class="pl-c">// or CacheFactory('bookCache', { ... });</span>
+      <span class="pl-smi">CacheFactory</span>.<span class="pl-en">createCache</span>(<span class="pl-s"><span class="pl-pds">'</span>bookCache<span class="pl-pds">'</span></span>, {
+        deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>,
+        recycleFreq<span class="pl-k">:</span> <span class="pl-c1">60000</span>
+      });
+    }
+
+    <span class="pl-k">var</span> bookCache <span class="pl-k">=</span> <span class="pl-smi">CacheFactory</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>bookCache<span class="pl-pds">'</span></span>);
+
+    <span class="pl-k">return</span> {
+      <span class="pl-en">findBookById</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">id</span>) {
+        <span class="pl-k">return</span> $<span class="pl-smi">http</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>/api/books/<span class="pl-pds">'</span></span> <span class="pl-k">+</span> id, { cache<span class="pl-k">:</span> bookCache });
+      }
+    };
+  });</pre></div>
+
+<h3><a id="user-content-the-basics" class="anchor" href="#the-basics" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Basics</h3>
+
+<p>First, inject <code>CacheFactory</code> then create a cache. Let's go:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>myService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">CacheFactory</span>) {
+  <span class="pl-k">var</span> profileCache;
+
+  <span class="pl-c">// Check to make sure the cache doesn't already exist</span>
+  <span class="pl-k">if</span> (<span class="pl-k">!</span><span class="pl-smi">CacheFactory</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>profileCache<span class="pl-pds">'</span></span>)) {
+    profileCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>profileCache<span class="pl-pds">'</span></span>);
+  }
+});</pre></div>
+
+<p>Let's add some items to the cache:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">profileCache</span>.<span class="pl-en">put</span>(<span class="pl-s"><span class="pl-pds">'</span>/profiles/34<span class="pl-pds">'</span></span>, {
+    name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>John<span class="pl-pds">'</span></span>,
+    skills<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>programming<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>piano<span class="pl-pds">'</span></span>]
+});
+
+<span class="pl-smi">profileCache</span>.<span class="pl-en">put</span>(<span class="pl-s"><span class="pl-pds">'</span>/profiles/22<span class="pl-pds">'</span></span>, {
+    name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Sally<span class="pl-pds">'</span></span>,
+    skills<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>marketing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>climbing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>painting<span class="pl-pds">'</span></span>]
+});</pre></div>
+
+<p>Right now, these items will stay in the cache until a page refresh.</p>
+
+<p>Let's have items which are added to <code>profileCache</code> expire after an hour:</p>
+
+<div class="highlight highlight-source-js"><pre>profileCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>profileCache<span class="pl-pds">'</span></span>, {
+  maxAge<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span> <span class="pl-c">// 1 hour</span>
+});</pre></div>
+
+<p>Perfect. Say we also want the items removed from the cache when they expire:</p>
+
+<div class="highlight highlight-source-js"><pre>profileCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>profileCache<span class="pl-pds">'</span></span>, {
+  maxAge<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span> <span class="pl-c">// 1 hour,</span>
+  deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>
+});</pre></div>
+
+<p>Let's say that when the items do expire, we want to refresh them with new values:</p>
+
+<div class="highlight highlight-source-js"><pre>profileCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>profileCache<span class="pl-pds">'</span></span>, {
+  maxAge<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span> <span class="pl-c">// 1 hour,</span>
+  deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>,
+  <span class="pl-en">onExpire</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">key</span>, <span class="pl-smi">value</span>) {
+    $<span class="pl-smi">http</span>.<span class="pl-en">get</span>(key).<span class="pl-en">success</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+      <span class="pl-smi">profileCache</span>.<span class="pl-en">put</span>(key, data);
+    });
+  }
+});</pre></div>
+
+<p>Or say we want all of our caches to use that configuration as their default:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>app<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>angular-cache<span class="pl-pds">'</span></span>]).<span class="pl-en">config</span>(<span class="pl-k">function</span> (<span class="pl-smi">CacheFactoryProvider</span>) {
+  <span class="pl-smi">angular</span>.<span class="pl-en">extend</span>(<span class="pl-smi">CacheFactoryProvider</span>.<span class="pl-smi">defaults</span>, {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">3600000</span>,
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>,
+    <span class="pl-en">onExpire</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">key</span>, <span class="pl-smi">value</span>) {
+      <span class="pl-k">var</span> _this <span class="pl-k">=</span> <span class="pl-v">this</span>; <span class="pl-c">// "this" is the cache in which the item expired</span>
+      <span class="pl-smi">angular</span>.<span class="pl-en">injector</span>([<span class="pl-s"><span class="pl-pds">'</span>ng<span class="pl-pds">'</span></span>]).<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>$http<span class="pl-pds">'</span></span>).<span class="pl-en">get</span>(key).<span class="pl-en">success</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+        <span class="pl-smi">_this</span>.<span class="pl-en">put</span>(key, data);
+      });
+    }
+  });
+});</pre></div>
+
+<h3><a id="user-content-working-with-a-cache" class="anchor" href="#working-with-a-cache" aria-hidden="true"><span class="octicon octicon-link"></span></a>Working with a cache</h3>
+
+<p>We can retrieve items from a cache like so:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> profile <span class="pl-k">=</span> <span class="pl-smi">profileCache</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>/profiles/34<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">profile</span>.<span class="pl-c1">name</span>; <span class="pl-c">// 'John'</span></pre></div>
+
+<p>And get information about items in the cache:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> info <span class="pl-k">=</span> <span class="pl-smi">profileCache</span>.<span class="pl-c1">info</span>(<span class="pl-s"><span class="pl-pds">'</span>/profiles/34<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">info</span>.<span class="pl-smi">isExpired</span>; <span class="pl-c">// false</span>
+<span class="pl-c">// etc.</span></pre></div>
+
+<p>and information about the cache itself:</p>
+
+<pre><code>var info = profileCache.info();
+
+info.size; // 2
+info.maxAge; // 3600000
+info.deleteOnExpire; // 'aggressive'
+// etc.
+</code></pre>
+
+<p>Items are easily removed, and we can destroy our cache when we're done with it:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">profileCache</span>.<span class="pl-en">remove</span>(<span class="pl-s"><span class="pl-pds">'</span>/profiles/34<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">profileCache</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>/profiles/34<span class="pl-pds">'</span></span>); <span class="pl-c">// undefined</span>
+
+<span class="pl-smi">profileCache</span>.<span class="pl-en">destroy</span>();
+
+<span class="pl-smi">CacheFactory</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>profileCache<span class="pl-pds">'</span></span>); <span class="pl-c">// undefined</span></pre></div>
+
+<h3><a id="user-content-configuration-options" class="anchor" href="#configuration-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration Options</h3>
+
+<p>These options apply to:</p>
+
+<ul>
+<li><code>CacheFactory(cacheId[, options)</code></li>
+<li><code>CacheFactory.createCache(cacheId[, options])</code></li>
+<li><code>Cache#setOptions(options[, strict])</code></li>
+<li><code>Cache#setMaxAge(maxAge)</code>, <code>Cache#setOnExpire(onExpire)</code>, etc.</li>
+</ul>
+
+<h5><a id="user-content-cacheflushinterval" class="anchor" href="#cacheflushinterval" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>cacheFlushInterval</code></h5>
+
+<p>If set, remove all items from a cache on an interval after the given number of milliseconds. Default: <code>null</code>.</p>
+
+<h5><a id="user-content-capacity" class="anchor" href="#capacity" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>capacity</code></h5>
+
+<p>Maximum number of items a cache can hold. Adding more items than the capacity will cause the cache to operate like an LRU cache, removing the least recently used items to stay under capacity. Default: <code>Number.MAX_VALUE</code>.</p>
+
+<h5><a id="user-content-deleteonexpire" class="anchor" href="#deleteonexpire" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>deleteOnExpire</code></h5>
+
+<p>Determines the behavior of a cache when an item expires. Default: <code>none</code>.</p>
+
+<p>Possible values:</p>
+
+<ul>
+<li><code>none</code> - Cache will do nothing when an item expires.</li>
+<li><code>passive</code> - Cache will do nothing when an item expires. Expired items will remain in the cache until requested, at which point they are removed, and <code>undefined</code> is returned.</li>
+<li><code>aggressive</code> - Cache will remove expired items as soon as they are discovered.</li>
+</ul>
+
+<h5><a id="user-content-disabled" class="anchor" href="#disabled" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>disabled</code></h5>
+
+<p>Determines whether a cache is disabled. Default: <code>false</code>.</p>
+
+<h5><a id="user-content-onexpire" class="anchor" href="#onexpire" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>onExpire</code></h5>
+
+<p>A callback function to be executed whenever an expired item is removed from a cache when the cache is in <code>passive</code> or <code>aggressive</code> mode. Will be passed the <code>key</code> and <code>value</code> of the expired item.</p>
+
+<p>Will be passed a third <code>done</code> argument if the cache is in <code>passive</code> mode. This allows you to synchronously access the <code>key</code> and <code>value</code> of the expired item when you make the <code>Cache#get(key[, options])</code> call that is the reason the expired item is being removed in the first place. Default: <code>null</code>.</p>
+
+<h5><a id="user-content-maxage" class="anchor" href="#maxage" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>maxAge</code></h5>
+
+<p>The number of milliseconds until a newly inserted item expires. Default: <code>Number.MAX_VALUE</code>.</p>
+
+<h5><a id="user-content-recyclefreq" class="anchor" href="#recyclefreq" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>recycleFreq</code></h5>
+
+<p>Determines how often a cache will scan for expired items when in <code>aggressive</code> mode. Default: <code>1000</code> (milliseconds).</p>
+
+<h5><a id="user-content-storageimpl" class="anchor" href="#storageimpl" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>storageImpl</code></h5>
+
+<p>Provide a custom storage medium, e.g. a polyfill for <code>localStorage</code>. Default: <code>null</code>.</p>
+
+<p>Must implement:</p>
+
+<ul>
+<li><code>setItem</code> - Same API as <code>localStorage.setItem(key, value)</code></li>
+<li><code>getItem</code> - Same API as <code>localStorage.getItem(key)</code></li>
+<li><code>removeItem</code> - Same API as <code>localStorage.removeItem(key)</code></li>
+</ul>
+
+<h5><a id="user-content-storagemode" class="anchor" href="#storagemode" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>storageMode</code></h5>
+
+<p>Determines the storage medium used by a cache. Default: <code>memory</code>.</p>
+
+<p>Possible values:</p>
+
+<ul>
+<li><code>memory</code> - Cache will hold data in memory. Data is cleared when the page is refreshed.</li>
+<li><code>localStorage</code> - Cache will hold data in <code>localStorage</code> if available. Data is <em>not</em> cleared when the page is refreshed.</li>
+<li><code>sessionStorage</code> - Cache will hold data in <code>sessionStorage</code> if available. Data is <em>not</em> cleared when the page is refreshed.</li>
+</ul>
+
+<h5><a id="user-content-storageprefix" class="anchor" href="#storageprefix" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>storagePrefix</code></h5>
+
+<p>Determines the namespace of a cache when <code>storageMode</code> is set to <code>localStorage</code> or <code>sessionStorage</code>. Make it a shorter string to save space. Default: <code>angular-cache.caches.</code>.</p>
+
+<h5><a id="user-content-storeonreject" class="anchor" href="#storeonreject" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>storeOnReject</code></h5>
+
+<p>If inserting a promise into a cache, also insert the rejection value if the promise rejects. Default: <code>false</code>.</p>
+
+<h5><a id="user-content-storeonresolve" class="anchor" href="#storeonresolve" aria-hidden="true"><span class="octicon octicon-link"></span></a>storeOnResolve</h5>
+
+<p>If inserting a promise into a cache, also insert the resolved value if the promise resolves. Default: <code>false</code>.</p>
+
+<h3><a id="user-content-using-angular-cache-with-http" class="anchor" href="#using-angular-cache-with-http" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using angular-cache with $http</h3>
+
+<p><strong>Note:</strong> The downside of letting <code>$http</code> handle caching for you is that it caches the responses (in string form) to your requests–not the JavaScript Object parsed from the response body. This means you can't interact with the data in the cache used by <code>$http</code>. See below for how to handle the caching yourself, which gives you more control and the ability to interact with the cache (use it as a data store).</p>
+
+<p>Configure <code>$http</code> to use a cache created by <code>CacheFactory</code> by default:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">run</span>(<span class="pl-k">function</span> (<span class="pl-smi">$http</span>, <span class="pl-smi">CacheFactory</span>) {
+  $<span class="pl-smi">http</span>.<span class="pl-smi">defaults</span>.<span class="pl-smi">cache</span> <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>defaultCache<span class="pl-pds">'</span></span>, {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// Items added to this cache expire after 15 minutes</span>
+    cacheFlushInterval<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// This cache will clear itself every hour</span>
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span> <span class="pl-c">// Items will be deleted from this cache when they expire</span>
+  });
+});</pre></div>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>MyService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$http</span>, <span class="pl-smi">$q</span>) {
+  <span class="pl-k">return</span> {
+    <span class="pl-en">getDataById</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">id</span>) {
+      <span class="pl-k">var</span> deferred <span class="pl-k">=</span> $<span class="pl-smi">q</span>.<span class="pl-c1">defer</span>();
+      <span class="pl-k">var</span> start <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Date</span>().<span class="pl-c1">getTime</span>();
+
+      $<span class="pl-smi">http</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>api/data/<span class="pl-pds">'</span></span> <span class="pl-k">+</span> id, {
+        cache<span class="pl-k">:</span> <span class="pl-c1">true</span>
+      }).<span class="pl-en">success</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+        <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>time taken for request: <span class="pl-pds">'</span></span> <span class="pl-k">+</span> (<span class="pl-k">new</span> <span class="pl-en">Date</span>().<span class="pl-c1">getTime</span>() <span class="pl-k">-</span> start) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>ms<span class="pl-pds">'</span></span>);
+        <span class="pl-smi">deferred</span>.<span class="pl-en">resolve</span>(data);
+      });
+      <span class="pl-k">return</span> <span class="pl-smi">deferred</span>.<span class="pl-smi">promise</span>;
+    }
+  };
+});</pre></div>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">controller</span>(<span class="pl-s"><span class="pl-pds">'</span>myCtrl<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">MyService</span>) {
+  <span class="pl-smi">MyService</span>.<span class="pl-en">getDataById</span>(<span class="pl-c1">1</span>).<span class="pl-en">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+    <span class="pl-c">// e.g. "time taken for request: 2375ms"</span>
+    <span class="pl-c">// Data returned by this next call is already cached.</span>
+    <span class="pl-k">return</span> <span class="pl-smi">MyService</span>.<span class="pl-en">getDataById</span>(<span class="pl-c1">1</span>).<span class="pl-en">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+      <span class="pl-c">// e.g. "time taken for request: 1ms"</span>
+    });
+  });
+});</pre></div>
+
+<p>Tell $http to use a cache created by CacheFactory for a specific request:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>MyService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$q</span>, <span class="pl-smi">$http</span>, <span class="pl-smi">CacheFactory</span>) {
+
+  <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>dataCache<span class="pl-pds">'</span></span>, {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// Items added to this cache expire after 15 minutes</span>
+    cacheFlushInterval<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// This cache will clear itself every hour</span>
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span> <span class="pl-c">// Items will be deleted from this cache when they expire</span>
+  });
+
+  <span class="pl-k">return</span> {
+    <span class="pl-en">getDataById</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">id</span>) {
+      <span class="pl-k">var</span> deferred <span class="pl-k">=</span> $<span class="pl-smi">q</span>.<span class="pl-c1">defer</span>();
+      <span class="pl-k">var</span> start <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Date</span>().<span class="pl-c1">getTime</span>();
+
+      $<span class="pl-smi">http</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>api/data/<span class="pl-pds">'</span></span> <span class="pl-k">+</span> id, {
+        cache<span class="pl-k">:</span> <span class="pl-smi">CacheFactory</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>dataCache<span class="pl-pds">'</span></span>)
+      }).<span class="pl-en">success</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+        <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>time taken for request: <span class="pl-pds">'</span></span> <span class="pl-k">+</span> (<span class="pl-k">new</span> <span class="pl-en">Date</span>().<span class="pl-c1">getTime</span>() <span class="pl-k">-</span> start) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>ms<span class="pl-pds">'</span></span>);
+        <span class="pl-smi">deferred</span>.<span class="pl-en">resolve</span>(data);
+      });
+      <span class="pl-k">return</span> <span class="pl-smi">deferred</span>.<span class="pl-smi">promise</span>;
+    }
+  };
+});</pre></div>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">controller</span>(<span class="pl-s"><span class="pl-pds">'</span>myCtrl<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">MyService</span>) {
+  <span class="pl-smi">MyService</span>.<span class="pl-en">getDataById</span>(<span class="pl-c1">1</span>).<span class="pl-en">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+    <span class="pl-c">// e.g. "time taken for request: 2375ms"</span>
+    <span class="pl-c">// Data returned by this next call is already cached.</span>
+    <span class="pl-k">return</span> <span class="pl-smi">MyService</span>.<span class="pl-en">getDataById</span>(<span class="pl-c1">1</span>).<span class="pl-en">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+      <span class="pl-c">// e.g. "time taken for request: 1ms"</span>
+    });
+  });
+});</pre></div>
+
+<p>Do your own caching while using the $http service:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>MyService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$q</span>, <span class="pl-smi">$http</span>, <span class="pl-smi">CacheFactory</span>) {
+
+  <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>dataCache<span class="pl-pds">'</span></span>, {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// Items added to this cache expire after 15 minutes</span>
+    cacheFlushInterval<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// This cache will clear itself every hour</span>
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span> <span class="pl-c">// Items will be deleted from this cache when they expire</span>
+  });
+
+  <span class="pl-k">return</span> {
+    <span class="pl-en">getDataById</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">id</span>) {
+      <span class="pl-k">var</span> deferred <span class="pl-k">=</span> $<span class="pl-smi">q</span>.<span class="pl-c1">defer</span>();
+      <span class="pl-k">var</span> start <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Date</span>().<span class="pl-c1">getTime</span>();
+      <span class="pl-k">var</span> dataCache <span class="pl-k">=</span> <span class="pl-smi">CacheFactory</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>dataCache<span class="pl-pds">'</span></span>);
+
+      <span class="pl-c">// Now that control of inserting/removing from the cache is in our hands,</span>
+      <span class="pl-c">// we can interact with the data in "dataCache" outside of this context,</span>
+      <span class="pl-c">// e.g. Modify the data after it has been returned from the server and</span>
+      <span class="pl-c">// save those modifications to the cache.</span>
+      <span class="pl-k">if</span> (<span class="pl-smi">dataCache</span>.<span class="pl-en">get</span>(id)) {
+        <span class="pl-smi">deferred</span>.<span class="pl-en">resolve</span>(<span class="pl-smi">dataCache</span>.<span class="pl-en">get</span>(id));
+      } <span class="pl-k">else</span> {
+        $<span class="pl-smi">http</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">'</span>api/data/<span class="pl-pds">'</span></span> <span class="pl-k">+</span> id).<span class="pl-en">success</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+          <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>time taken for request: <span class="pl-pds">'</span></span> <span class="pl-k">+</span> (<span class="pl-k">new</span> <span class="pl-en">Date</span>().<span class="pl-c1">getTime</span>() <span class="pl-k">-</span> start) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>ms<span class="pl-pds">'</span></span>);
+          <span class="pl-smi">dataCache</span>.<span class="pl-en">put</span>(id, data);
+          <span class="pl-smi">deferred</span>.<span class="pl-en">resolve</span>(data);
+          });
+      }
+      <span class="pl-k">return</span> <span class="pl-smi">deferred</span>.<span class="pl-smi">promise</span>;
+    }
+  };
+});</pre></div>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">controller</span>(<span class="pl-s"><span class="pl-pds">'</span>myCtrl<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">MyService</span>) {
+  <span class="pl-smi">MyService</span>.<span class="pl-en">getDataById</span>(<span class="pl-c1">1</span>).<span class="pl-en">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+    <span class="pl-c">// e.g. "time taken for request: 2375ms"</span>
+    <span class="pl-c">// Data returned by this next call is already cached.</span>
+    <span class="pl-k">return</span> <span class="pl-smi">MyService</span>.<span class="pl-en">getDataById</span>(<span class="pl-c1">1</span>).<span class="pl-en">then</span>(<span class="pl-k">function</span> (<span class="pl-smi">data</span>) {
+      <span class="pl-c">// e.g. "time taken for request: 1ms"</span>
+    });
+  });
+});</pre></div>
+
+<h3><a id="user-content-using-angular-cache-with-localstorage" class="anchor" href="#using-angular-cache-with-localstorage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using angular-cache with localStorage</h3>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>myService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">CacheFactory</span>) {
+
+  <span class="pl-c">// This cache will sync itself with localStorage if it exists, otherwise it won't. Every time the</span>
+  <span class="pl-c">// browser loads this app, this cache will attempt to initialize itself with any data it had</span>
+  <span class="pl-c">// already saved to localStorage (or sessionStorage if you used that).</span>
+  <span class="pl-k">var</span> myAwesomeCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>myAwesomeCache<span class="pl-pds">'</span></span>, {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// Items added to this cache expire after 15 minutes.</span>
+    cacheFlushInterval<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// This cache will clear itself every hour.</span>
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>, <span class="pl-c">// Items will be deleted from this cache right when they expire.</span>
+    storageMode<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>localStorage<span class="pl-pds">'</span></span> <span class="pl-c">// This cache will use `localStorage`.</span>
+  });
+});</pre></div>
+
+<p>Using angular-cache in browsers that DON'T support localStorage:</p>
+
+<p>Option 1 - Do nothing (the cache will just store data in memory)</p>
+
+<p>Option 2 - Create/use a polyfill that provides the global <code>localStorage</code> and <code>sessionStorage</code> objects. angular-cache will attempt to use these if it finds them.</p>
+
+<p>Option 3 - Tell angular-cache exactly which polyfill to use (also useful if you just want to use your own implementation/wrapper for localStorage):</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">service</span>(<span class="pl-s"><span class="pl-pds">'</span>myService<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">CacheFactory</span>) {
+
+  <span class="pl-k">var</span> localStoragePolyfill <span class="pl-k">=</span> {
+    <span class="pl-en">getItem</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">key</span>) { ... },
+    <span class="pl-en">setItem</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">key</span>, <span class="pl-smi">value</span>) { ... },
+    <span class="pl-en">removeItem</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">key</span>) { ... }
+  };
+
+  <span class="pl-c">// Always use the polyfill</span>
+  <span class="pl-k">var</span> myAwesomeCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>myAwesomeCache<span class="pl-pds">'</span></span>, {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// Items added to this cache expire after 15 minutes.</span>
+    cacheFlushInterval<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// This cache will clear itself every hour.</span>
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>, <span class="pl-c">// Items will be deleted from this cache right when they expire.</span>
+    storageMode<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>localStorage<span class="pl-pds">'</span></span>, <span class="pl-c">// This cache will use `localStorage`.</span>
+    storageImpl<span class="pl-k">:</span> localStoragePolyfill <span class="pl-c">// angular-cache will use this polyfill instead of looking for localStorage</span>
+  });
+
+  <span class="pl-c">// Conditionally use the polyfill</span>
+  <span class="pl-k">var</span> options <span class="pl-k">=</span> {
+    maxAge<span class="pl-k">:</span> <span class="pl-c1">15</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// Items added to this cache expire after 15 minutes.</span>
+    cacheFlushInterval<span class="pl-k">:</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">60</span> <span class="pl-k">*</span> <span class="pl-c1">1000</span>, <span class="pl-c">// This cache will clear itself every hour.</span>
+    deleteOnExpire<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aggressive<span class="pl-pds">'</span></span>, <span class="pl-c">// Items will be deleted from this cache right when they expire.</span>
+    storageMode<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>localStorage<span class="pl-pds">'</span></span> <span class="pl-c">// This cache will use `localStorage`.</span>
+  };
+  <span class="pl-k">if</span> (<span class="pl-k">!</span><span class="pl-smi">window</span>.<span class="pl-smi">localStorage</span>) {
+    <span class="pl-smi">options</span>.<span class="pl-smi">storageImpl</span> <span class="pl-k">=</span> localStoragePolyfill;
+  }
+  <span class="pl-k">var</span> myAwesomeCache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>myAwesomeCache<span class="pl-pds">'</span></span>, options);
+});</pre></div>
+
+<p>Documentation on the interface that must be implemented by any storageImpl polyfill used by angular-cache can be found on the W3C Recommendation page for webstorage. The interface itself looks like:</p>
+
+<pre><code>interface Storage {
+  readonly attribute unsigned long length;
+  DOMString? key(unsigned long index);
+  getter DOMString getItem(DOMString key);
+  setter creator void setItem(DOMString key, DOMString value);
+  deleter void removeItem(DOMString key);
+  void clear();
+};
+</code></pre>
+
+<p>angular-cache cares only about these three methods:</p>
+
+<ul>
+<li><code>setItem</code></li>
+<li><code>getItem</code></li>
+<li><code>removeItem</code></li>
+</ul>
+
+<p>One developer suggested using store.js–a wrapper and polyfill for localStorage. However, store.js has its own API that doesn't match that of the webstorage spec, so if you want to use store.js or any other 3rd-party polyfill then you'll need to create a wrapper for it if it doesn't have the same API as localStorage . For example:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> storeJsToStandard {
+  getItem<span class="pl-k">:</span> <span class="pl-smi">store</span>.<span class="pl-smi">get</span>,
+  setItem<span class="pl-k">:</span> <span class="pl-smi">store</span>.<span class="pl-smi">set</span>,
+  removeItem<span class="pl-k">:</span> <span class="pl-smi">store</span>.<span class="pl-smi">remove</span>
+};
+
+<span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>myNewCache<span class="pl-pds">'</span></span>, {
+  storageMode<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>localStorage<span class="pl-pds">'</span></span>,
+  storageImpl<span class="pl-k">:</span> storeJsToStandard
+});</pre></div>
+
+<h3><a id="user-content-api-reference" class="anchor" href="#api-reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Reference</h3>
+
+<h5><a id="user-content-cachefactorycacheid-options--cachefactorycreatecachecacheid-options" class="anchor" href="#cachefactorycacheid-options--cachefactorycreatecachecacheid-options" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory(cacheId[, options])</code> &amp; <code>CacheFactory.createCache(cacheId[, options])</code></h5>
+
+<p>Create a cache. Cache must not already exist. <code>cacheId</code> must be a string. <code>options</code> is an optional argument and must be an object. Any options you pass here will override any default options.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> cache <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>cache<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> cache2 <span class="pl-k">=</span> <span class="pl-smi">CacheFactory</span>.<span class="pl-en">createCache</span>(<span class="pl-s"><span class="pl-pds">'</span>cache2<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> cache3 <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>cache<span class="pl-pds">'</span></span>, { maxAge<span class="pl-k">:</span> <span class="pl-c1">900000</span> });
+<span class="pl-k">var</span> cache4 <span class="pl-k">=</span> <span class="pl-en">CacheFactory</span>(<span class="pl-s"><span class="pl-pds">'</span>cache<span class="pl-pds">'</span></span>); <span class="pl-c">// Error "cache already exists!"</span></pre></div>
+
+<h5><a id="user-content-cachefactorygetcacheid" class="anchor" href="#cachefactorygetcacheid" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.get(cacheId)</code></h5>
+
+<p>Return the cache with the given <code>cacheId</code>.</p>
+
+<h5><a id="user-content-cachefactoryinfo" class="anchor" href="#cachefactoryinfo" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.info()</code></h5>
+
+<p>Return an object of key-value pairs, the keys being cache ids and the values being the result of <code>.info()</code> being called on each cache.</p>
+
+<h5><a id="user-content-cachefactorykeyset" class="anchor" href="#cachefactorykeyset" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.keySet()</code></h5>
+
+<p>Return the ids of all registered caches as an object.</p>
+
+<h5><a id="user-content-cachefactorykeys" class="anchor" href="#cachefactorykeys" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.keys()</code></h5>
+
+<p>Return the ids of all registered caches as an array.</p>
+
+<h5><a id="user-content-cachefactorydestroycacheid" class="anchor" href="#cachefactorydestroycacheid" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.destroy(cacheId)</code></h5>
+
+<p>Destroy the cache with the given <code>cacheId</code>.</p>
+
+<h5><a id="user-content-cachefactorydestroyall" class="anchor" href="#cachefactorydestroyall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.destroyAll()</code></h5>
+
+<p>Destroy all registered caches.</p>
+
+<h5><a id="user-content-cachefactoryclearall" class="anchor" href="#cachefactoryclearall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.clearAll()</code></h5>
+
+<p>Remove all data from all registered caches.</p>
+
+<h5><a id="user-content-cachefactoryenableall" class="anchor" href="#cachefactoryenableall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.enableAll()</code></h5>
+
+<p>Enable all registered caches.</p>
+
+<h5><a id="user-content-cachefactorydisableall" class="anchor" href="#cachefactorydisableall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.disableAll()</code></h5>
+
+<p>Disable all registered caches.</p>
+
+<h5><a id="user-content-cachefactorytouchall" class="anchor" href="#cachefactorytouchall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.touchAll()</code></h5>
+
+<p>Call <code>.touch()</code> on all registered caches.</p>
+
+<h5><a id="user-content-cachefactoryremoveexpiredfromall" class="anchor" href="#cachefactoryremoveexpiredfromall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>CacheFactory.removeExpiredFromAll()</code></h5>
+
+<p>Call <code>.removeExpired()</code> on all registered caches. Returns a hash of any expired items, keyed by cache id.</p>
+
+<h5><a id="user-content-cachegetkey-options" class="anchor" href="#cachegetkey-options" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#get(key[, options])</code></h5>
+
+<p>Return the item with the given <code>key</code>. <code>options</code>, if provided, must be an object.</p>
+
+<p>If the cache is in <code>passive</code> mode, then <code>options.onExpire</code> can be a function that will be called with the <code>key</code> and <code>value</code> of the requested item if the requested item is expired, with the <code>get</code> call itself returning undefined.</p>
+
+<h5><a id="user-content-cacheputkey-value-options" class="anchor" href="#cacheputkey-value-options" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#put(key, value[, options])</code></h5>
+
+<p>Insert the item with the given <code>key</code> and <code>value</code> into the cache. <code>options</code>, if provided, must be an object.</p>
+
+<p>If inserting a promise, <code>options.storeOnReject</code> determines whether to insert the rejection value if the promise rejects (overriding the default <code>storeOnReject</code> setting for the cache).
+If inserting a promise, <code>options.storeOnResolve</code> determines whether to insert the resolved value if the promise resolves (overriding the default <code>storeOnResolve</code> setting for the cache).</p>
+
+<h5><a id="user-content-cacheremovekey" class="anchor" href="#cacheremovekey" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache.remove(key)</code></h5>
+
+<p>Remove and return the item with the given <code>key</code>, if it is in the cache.</p>
+
+<h5><a id="user-content-cacheremoveall" class="anchor" href="#cacheremoveall" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache.removeAll()</code></h5>
+
+<p>Remove all items in the cache.</p>
+
+<h5><a id="user-content-cacheremoveexpired" class="anchor" href="#cacheremoveexpired" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache.removeExpired()</code></h5>
+
+<p>Remove and return all expired items in the cache.</p>
+
+<h5><a id="user-content-cachedestroy" class="anchor" href="#cachedestroy" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache.destroy()</code></h5>
+
+<p>Completely destroy this cache and its data.</p>
+
+<h5><a id="user-content-cacheinfokey" class="anchor" href="#cacheinfokey" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#info([key])</code></h5>
+
+<p><code>Cache#info()</code> returns an object containing information about the cache.</p>
+
+<p><code>Cache#info(key)</code> returns an object containing information about the item with the given <code>key</code>, if the item is in the cache.</p>
+
+<h5><a id="user-content-cachekeyset" class="anchor" href="#cachekeyset" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#keySet()</code></h5>
+
+<p>Return the keys of all items in the cache as an object.</p>
+
+<h5><a id="user-content-cachekeys" class="anchor" href="#cachekeys" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#keys()</code></h5>
+
+<p>Return the keys of all items in the cache as an array.</p>
+
+<h5><a id="user-content-cacheenable" class="anchor" href="#cacheenable" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#enable()</code></h5>
+
+<p>Enable the cache.</p>
+
+<h5><a id="user-content-cachedisable" class="anchor" href="#cachedisable" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#disable()</code></h5>
+
+<p>Disable the cache.</p>
+
+<h5><a id="user-content-cachetouchkey" class="anchor" href="#cachetouchkey" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#touch([key])</code></h5>
+
+<p><code>Cache#touch()</code> will "touch" all items in the cache.
+<code>Cache#touch(key)</code> will "touch" the item with the given <code>key</code>.</p>
+
+<h5><a id="user-content-cachesetcacheflushintervalcacheflushinterval" class="anchor" href="#cachesetcacheflushintervalcacheflushinterval" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setCacheFlushInterval(cacheFlushInterval)</code></h5>
+
+<p>Set the <code>cacheFlushInterval</code> for the cache.</p>
+
+<h5><a id="user-content-cachesetcapacitycapacity" class="anchor" href="#cachesetcapacitycapacity" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setCapacity(capacity)</code></h5>
+
+<p>Set the <code>capacity</code> for the cache. Setting this lower than the current item count will result in those items being removed.</p>
+
+<h5><a id="user-content-cachesetdeleteonexpiredeleteonexpire" class="anchor" href="#cachesetdeleteonexpiredeleteonexpire" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setDeleteOnExpire(deleteOnExpire)</code></h5>
+
+<p>Set the <code>deleteOnExpire</code> for the cache.</p>
+
+<h5><a id="user-content-cachesetmaxagemaxage" class="anchor" href="#cachesetmaxagemaxage" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setMaxAge(maxAge)</code></h5>
+
+<p>Set the <code>maxAge</code> for the cache.</p>
+
+<h5><a id="user-content-cachesetonexpireonexpire" class="anchor" href="#cachesetonexpireonexpire" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setOnExpire(onExpire)</code></h5>
+
+<p>Set the <code>onExpire</code> for the cache.</p>
+
+<h5><a id="user-content-cachesetrecyclefreqrecyclefreq" class="anchor" href="#cachesetrecyclefreqrecyclefreq" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setRecycleFreq(recycleFreq)</code></h5>
+
+<p>Set the <code>recycleFreq</code> for the cache.</p>
+
+<h5><a id="user-content-cachesetstoragemodestoragemode" class="anchor" href="#cachesetstoragemodestoragemode" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setStorageMode(storageMode)</code></h5>
+
+<p>Set the <code>storageMode</code> for the cache. This will move data from the current storage medium to the new one.</p>
+
+<h5><a id="user-content-cachesetoptionsoptions-strict" class="anchor" href="#cachesetoptionsoptions-strict" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>Cache#setOptions(options[, strict])</code></h5>
+
+<p>Set multiple options for the cache at a time. Setting <code>strict</code> to <code>true</code> will reset options for the cache that are not specifically set in the <code>options</code> hash to <code>CacheFactoryProvider.defaults</code>.</p>
+
+<h3><a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p><a href="https://github.com/jmdobry/angular-cache/blob/master/LICENSE">MIT License</a></p>
+
+<p>Copyright (C) 2013-2015 Jason Dobry</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</article>
+  </div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div>
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.05352s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-7d180c2bb5779ecb7ab5d04ce8af999e73836dcf0df1a8c44b69c62a1de0732f.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-0430146da495323855e2f392d5359490e0aebbd7562599ad397ec9dedade4e0e.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

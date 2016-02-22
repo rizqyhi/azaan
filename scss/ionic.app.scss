@@ -1,0 +1,211 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+@import "www/css/animate";
+
+.loading-container .loading {
+  background: none
+}
+
+.bar-home, .bar-home .bar.bar-dark, .bar-home .nav-bar-block ion-header-bar {
+    border: none;
+    background: none !important
+}
+
+.bg-gradient {
+  //padding: 10px 0;
+  background: #4CB8C4;
+  background: -webkit-linear-gradient(to top, #005E46 , #3CD3AD);
+  background: linear-gradient(to top, #005E46 , #3CD3AD);
+  background-attachment: scroll
+}
+
+.location-header {
+  position: relative;
+  width: 100%;
+  top: 70px;
+
+  .location-name {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff
+  }
+
+  .date-nav {
+    .current {
+      padding: 10px 0;
+      border: 1px solid #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 28px;
+      color: #fff;
+    }
+
+    .prev, .next {
+      padding: 10px 5px;
+    }
+
+    .prev a, .next a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      opacity: 0.6
+    }
+
+    .next {
+      text-align: right;
+    }
+  }
+
+  .date-hijr {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.location {
+  margin-top: 150px;
+
+  .place-loading {
+    text-align: center;
+  }
+
+  .first-location {
+    padding: 0 20px;
+    text-align: center;
+
+    h4 {
+      margin: 0 0 20px;
+      color: #fff
+    }
+
+    .button {
+      border-radius: 4px
+    }
+  }
+
+  .timeline {
+    position: relative;
+    padding: 0 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 2px;
+      margin-left: 0;
+      background: #d7e4ed;
+    }
+
+    .pray {
+      position: relative;
+      margin: 10px 0;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:not(:first-child) {
+        margin-top: -120px;
+      }
+
+      .bullet {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: -4px;
+        border-radius: 50%;
+        background: #fff
+      }
+
+      .content {
+        position: relative;
+        width: 45%;
+        color: #fff;
+
+        &:content:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .name {
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          font-size: 22px;
+          border-bottom: 1px solid rgba(255,255,255,.5)
+        }
+
+        .time {
+          margin-bottom: 10px;
+          font-size: 22px;
+          font-weight: bold;
+        }
+
+        .quote {
+          font-style: italic;
+        }
+      }
+
+      &:nth-child(odd) .content {
+        text-align: right;
+      }
+
+      &:nth-child(even) .content {
+        float: right;
+      }
+    }
+  }
+
+}
+
+.fader {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, #005E46);
+}
+
+.alert {
+  .red {
+    background: $positive;
+    border-radius: 3px;
+  }
+}

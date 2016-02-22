@@ -1,0 +1,13 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.1",
+    "ngstorage": "~0.3.10",
+    "moment": "~2.10.6",
+    "moment-hijri": "~2.0.0",
+    "angular-cache": "https://github.com/jmdobry/angular-cache",
+    "ngCordova": "~0.1.23-alpha",
+    "animate.css": "~3.4.0"
+  }
+}

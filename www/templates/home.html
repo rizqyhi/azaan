@@ -1,0 +1,64 @@
+<ion-view class="bg-gradient" view-title="{{location}}">
+  <ion-nav-buttons side="left">
+    <a ui-sref="locations" class="button button-icon button-clear ion-ios-location-outline">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <a ui-sref="settings" class="button button-icon button-clear ion-ios-gear-outline">
+    </a>
+  </ion-nav-buttons>
+
+  <div class="location-header" ng-if="$localStorage.locations.length > 0">
+    <div class="date-nav">
+      <ion-slide-box show-pager="false" delegate-handle="day-nav" on-slide-changed="changeDay($index)">
+        <ion-slide ng-repeat="date in dates">
+          <div class="row">
+            <div class="prev col">
+              <a href="" ng-click="prevDay()" ng-show="dates[todayIndex-1]"> <i class="icon ion-ios-arrow-left"></i> {{dates[todayIndex-1].formatted}}</a>
+            </div>
+            <div class="current col">
+              <span>{{dates[todayIndex].formatted}}</span>
+            </div>
+            <div class="next col">
+              <a href="" ng-click="nextDay()" ng-show="dates[todayIndex+1]">{{dates[todayIndex+1].formatted}}  <i class="icon ion-ios-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="date-hijr row">
+            <div class="col">{{date.hijr}} H</div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </div>
+
+  <ion-content class="location">
+    <div class="first-location" ng-if="$localStorage.locations.length < 1">
+      <h4>Hi! Looks like you have not add any place.</h4>
+      <a ui-sref="add" class="button">Add a Place Now</a>
+    </div>
+
+
+    <div class="place-loading" ng-if="$localStorage.locations.length > 0">
+      <ion-spinner icon="spiral" class="spinner-light"></ion-spinner>
+    </div>
+    <ion-slide-box show-pager="false" delegate-handle="days" ng-init="disableSlide()" class="hidden" ng-if="$localStorage.locations.length > 0">
+      <ion-slide class="day" ng-repeat="date in prayers">
+        <div class="timeline">
+          <div class="pray" ng-repeat="(name, time) in date.prayers">
+            <div class="bullet"></div>
+            <div class="content">
+              <div class="name">{{name}}</div>
+              <div class="time">{{time}}</div>
+              <p class="quote">{{hadiths[name][0]}}</p>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+
+  <div class="fader"></div>
+</ion-view>

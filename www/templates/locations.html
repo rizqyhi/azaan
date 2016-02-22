@@ -1,0 +1,19 @@
+<ion-view view-title="Locations">
+  <ion-nav-buttons side="right">
+    <a ui-sref="add" class="button button-icon button-clear ion-ios-plus-outline">
+    </a>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <a class="item item-button-right" ng-repeat="(key,location) in locations" ng-click="goToSlide($index)">
+        {{location}}
+        <button class="button button-clear button-assertive" ng-click="removeLocation(location)" ng-hide="$localStorage.settingDefaultLocation === location">
+        <i class="icon ion-android-cancel"></i>
+        </button>
+        <button class="button button-clear button-calm" ng-show="$localStorage.settingDefaultLocation === location">
+          <i class="icon ion-android-home"></i>
+        </button>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>
